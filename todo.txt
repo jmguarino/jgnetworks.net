@@ -1,0 +1,19 @@
+Navbar on top with tabs for:
+
+Landing Page
+	About me
+	Link to LinkedIn
+	Link to github
+
+Earth Defender Page:
+
+	Controls
+		Mouse Controls:
+		Hold down left mouse and drag left/right to move ship. 
+		Right click to fire. 
+		Click speaker to toggle mute.
+
+		Keyboard Controls:
+		Left/Right Arrow keys to move left/right.
+		Space to shoot. 
+		M toggles mute.
