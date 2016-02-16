@@ -9,18 +9,18 @@
     <meta name="description" content="jgnetworks EarthDefender page">
     <meta name="author" content="Justin Guarino">
     <link rel="icon" href="../../favicon.ico">
-    
+
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="../css/landing.css" rel="stylesheet">
-    
+    <link href="../css/jgnetworksbase.css" rel="stylesheet">
+
     <!-- game scripts -->
     <script src="soundmanager2-setup.js"></script>
     <script src="soundmanager2-jsmin.js"></script>
-    
+
     <title>EarthDefender</title>
-    
+
 </head>
 
 <body>
@@ -30,9 +30,9 @@
             <nav>
                 <ul class="nav nav-pills pull-right">
                     <li role="presentation"><a href="../index.html">Home</a></li>
-                    <li role="presentation"  class="active"><a href="#">EarthDefender</a></li>
-                    <li role="presentation"><a href="#">Hobbies</a></li>
-                    <li role="presentation"><a href="#">About</a></li>
+                    <li role="presentation" class="active"><a href="#">EarthDefender</a></li>
+                    <li role="presentation"><a href="../hobbies/hobbies.html">Hobbies</a></li>
+                    <li role="presentation"><a href="../about/about.html">About</a></li>
                 </ul>
             </nav>
             <h3 class="text-muted">JGNetworks</h3>
@@ -40,44 +40,66 @@
 
         <div class="jumbotron">
             <h1>EarthDefender</h1>
-            <p class="lead">This is a small space shooter written in <a href="https://libgdx.badlogicgames.com/">libGDX</a>, a Java game engine library. I made all of the assets (sound and images), so please excuse the programmer art!</p>
+            <p class="lead">This is a small (work in progress) space shooter written in <a href="https://libgdx.badlogicgames.com/">libGDX</a>, a Java game engine library. I made all of the assets so please excuse the programmer art.</p>
+            <p class="lead">Note: The game is not designed to work on small format screens so it likely will not load if you are on a mobile device, otherwise it should load in a few seconds.</p>
         </div>
 
-        <div class="row marketing">
-            <div class="col-lg-12">
+        <div class="row marketing gameMinSize">
+            <div class="col-lg-10">
                 <a class="superdev" href="javascript:%7B%20window.__gwt_bookmarklet_params%20%3D%20%7B'server_url'%3A'http%3A%2F%2Flocalhost%3A9876%2F'%7D%3B%20var%20s%20%3D%20document.createElement('script')%3B%20s.src%20%3D%20'http%3A%2F%2Flocalhost%3A9876%2Fdev_mode_on.js'%3B%20void(document.getElementsByTagName('head')%5B0%5D.appendChild(s))%3B%7D">&#8635;</a>
                 <div align="center" id="embed-html"></div>
                 <script type="text/javascript" src="html/html.nocache.js"></script>
             </div>
-        </div>
 
-        <footer class="footer">
-            <p>&copy; 2016 Justin Guarino</p>
-        </footer>
+            <div class="col-lg-2">
+                <div class="bg-info rounded">
+                    <h3 class="list-heading">Mouse Controls</h3>
+                    <ul>
+                        <li>Drag left/right to move ship.</li>
+                        <li>Left click to shoot.</li>
+                        <li>Click speaker to toggle sound.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-info">
+                    <h3 class="list-heading">Keyboard Controls</h3>
+                    <ul>
+                        <li>>Left/Right Arrows for movement.</li>
+                        <li>Space to shoot.</li>
+                        <li>M to toggle sound.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2016 Justin Guarino</p>
+    </footer>
 
     </div>
     <!-- /container -->
-    
+
     <!-- Bootstrap and JQuery -->
     <script src="../js/jquery/jquery-1.12.0.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
-    
+
     <!-- game controls -->
     <script>
-              function handleMouseDown(evt) {
-                evt.preventDefault();
-                evt.stopPropagation();
-                evt.target.style.cursor = 'default';
-              }
+        function handleMouseDown(evt) {
+            evt.preventDefault();
+            evt.stopPropagation();
+            evt.target.style.cursor = 'default';
+        }
 
-              function handleMouseUp(evt) {
-                evt.preventDefault();
-                evt.stopPropagation();
-                evt.target.style.cursor = '';
-              }
-              document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
-              document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
-       </script>
+        function handleMouseUp(evt) {
+            evt.preventDefault();
+            evt.stopPropagation();
+            evt.target.style.cursor = '';
+        }
+        document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+        document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+    </script>
 
 </body>
 
