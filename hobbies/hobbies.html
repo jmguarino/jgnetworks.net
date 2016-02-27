@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="***Placeholder">
+    <meta name="description" content="jgnetworks hobbies page">
     <meta name="author" content="Justin Guarino">
     <link rel="icon" href="../../favicon.ico">
 
@@ -15,7 +15,7 @@
 
     <link href="../css/jgnetworksbase.css" rel="stylesheet">
 
-    <title>***Placeholder</title>
+    <title>Hobbies</title>
 
 </head>
 
@@ -27,21 +27,255 @@
                 <ul class="nav nav-pills pull-right">
                     <li role="presentation"><a href="../index.html">Home</a></li>
                     <li role="presentation"><a href="../eDef/edef.html">EarthDefender</a></li>
-                    <li role="presentation"><a href="../hobbies/hobbies.html">Hobbies</a></li>
-                    <li role="presentation" class="active"><a href="#">About</a></li>
+                    <li role="presentation" class="active"><a href="#">Hobbies</a></li>
+                    <li role="presentation"><a href="../about/about.html">About</a></li>
                 </ul>
             </nav>
             <h3 class="text-muted">JGNetworks</h3>
         </div>
 
         <div class="jumbotron">
-            <h1>***Placeholder</h1>
-            <p class="lead">Testo texto herewego</p>
+            <h1>Hobbies</h1>
+            <p class="lead">Some of the things I've been up to lately.</p>
 
         </div>
 
-        <div class="row marketing">
+        <div class="container rounded" id="hobby-container">
+            <div class="row marketing">
+                <h3 class="text-center">Miniatures</h3>
+                <div id="monkCarousel" class="carousel slide col-md-4">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#monkCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#monkCarousel" data-slide-to="1"></li>
+                        <li data-target="#monkCarousel" data-slide-to="2"></li>
+                        <li data-target="#monkCarousel" data-slide-to="3"></li>
+                    </ol>
 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <button type="button" class="item active hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/monk/1.JPG">
+                            <img src="../images/minis/monk/1.JPG" alt="Monk">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/monk/2.JPG">
+                            <img src="../images/minis/monk/2.JPG" alt="Monk">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/monk/3.JPG">
+                            <img src="../images/minis/monk/3.JPG" alt="Monk">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/monk/4.JPG">
+                            <img src="../images/minis/monk/4.JPG" alt="Monk">
+                        </button>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#monkCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#monkCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div id="paladinCarousel" class="carousel slide col-md-4">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#paladinCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#paladinCarousel" data-slide-to="1"></li>
+                        <li data-target="#paladinCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <button type="button" class="item hobby-item active imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/paladin/1.JPG">
+                            <img src="../images/minis/paladin/1.JPG" alt="Paladin">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/paladin/2.JPG">
+                            <img src="../images/minis/paladin/2.JPG" alt="Paladin">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/paladin/3.JPG">
+                            <img src="../images/minis/paladin/3.JPG" alt="Paladin">
+                        </button>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#paladinCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#paladinCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div id="rogueCarousel" class="carousel slide col-md-4">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#rogueCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#rogueCarousel" data-slide-to="1"></li>
+                        <li data-target="#rogueCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <button type="button" class="item hobby-item active imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/rogue/1.JPG">
+                            <img src="../images/minis/rogue/1.JPG" alt="Rogue">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/rogue/2.JPG">
+                            <img src="../images/minis/rogue/2.JPG" alt="Rogue">
+                        </button>
+
+                        <button type="button" class="item hobby-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/minis/rogue/3.JPG">
+                            <img src="../images/minis/rogue/3.JPG" alt="Rogue">
+                        </button>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#rogueCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#rogueCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row marketing">
+                <h3 class="text-center">Wargame Table</h3>
+                <div id="gameTableCarousel" class="carousel slide col-md-12">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#gameTableCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="1"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="2"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="3"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="4"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="5"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="6"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="7"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="8"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="9"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="10"></li>
+                        <li data-target="#gameTableCarousel" data-slide-to="11"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <button type="button" class="item game-item active imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/8.JPG">
+                            <img src="../images/gameTable/8.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/9.JPG">
+                            <img src="../images/gameTable/9.JPG" alt="GameTable">
+                        </button>
+                        
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/a.JPG">
+                            <img src="../images/gameTable/a.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/b.JPG">
+                            <img src="../images/gameTable/b.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/c.JPG">
+                            <img src="../images/gameTable/c.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/d.JPG">
+                            <img src="../images/gameTable/d.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/e.JPG">
+                            <img src="../images/gameTable/e.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/f.JPG">
+                            <img src="../images/gameTable/f.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/g.JPG">
+                            <img src="../images/gameTable/g.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/h.JPG">
+                            <img src="../images/gameTable/h.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/i.JPG">
+                            <img src="../images/gameTable/i.JPG" alt="GameTable">
+                        </button>
+
+                        <button type="button" class="item game-item imgModBtn" data-toggle="modal" data-target="#imgModal" data-img-url="../images/gameTable/j.JPG">
+                            <img src="../images/gameTable/j.JPG" alt="GameTable">
+                        </button>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#gameTableCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#gameTableCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="row marketing">
+                    <h3 class="text-center">Brewing</h3>
+
+                    <div id="brewCarousel" class="carousel slide col-md-4 col-md-offset-4">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#brewCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#brewCarousel" data-slide-to="1"></li>
+                            <li data-target="#brewCarousel" data-slide-to="2"></li>
+                            <li data-target="#brewCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <button id="imgModBtn" type="button" class="item hobby-item active" data-toggle="modal" data-target="#imgModal" data-img-url="../images/brewing/firstBatch/1.JPG">
+                                <img src="../images/brewing/firstBatch/1.JPG" alt="Rogue">
+                            </button>
+
+                            <button id="imgModBtn" type="button" class="item hobby-item" data-toggle="modal" data-target="#imgModal" data-img-url="../images/brewing/firstBatch/2.JPG">
+                                <img src="../images/brewing/firstBatch/2.JPG" alt="Rogue">
+                            </button>
+
+                            <button id="imgModBtn" type="button" class="item hobby-item" data-toggle="modal" data-target="#imgModal" data-img-url="../images/brewing/firstBatch/3.JPG">
+                                <img src="../images/brewing/firstBatch/3.JPG">
+                            </button>
+
+                            <button id="imgModBtn" type="button" class="item hobby-item" data-toggle="modal" data-target="#imgModal" data-img-url="../images/brewing/firstBatch/4.JPG">
+                                <img src="../images/brewing/firstBatch/4.JPG">
+                            </button>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#brewCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#brewCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
@@ -51,10 +285,33 @@
     </div>
     <!-- /container -->
 
-    <!-- Bootstrap and JQuery -->
+    <!-- Modal -->
+    <div id="imgModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content  col-md-12">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="#" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JQuery and Bootstrap-Image-Gallery -->
     <script src="../js/jquery/jquery-1.12.0.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
 
+    <script src="../js/jghobbies.js"></script>
 </body>
 
 </html>
